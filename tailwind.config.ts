@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,10 +9,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "hsl(var(--background))",
+        blue: "hsl(var(--blue))",
+        purple: "hsl(var(--purple))",
+        orange: "hsl(var(--orange))",
+        darkOrange: "hsl(var(--darkOrange))",
+        border: "hsl(var(--border))",
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        hazloGreen: "hsl(var(--hazloGreen))",
+        hazloDarkGreen: "hsl(var(--hazloDarkGreen))",
+        hazloPink: "hsl(var(--hazloPink))",
+        hazloDarkPink: "hsl(var(--hazloDarkPink))",
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+export default config;
