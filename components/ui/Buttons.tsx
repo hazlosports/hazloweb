@@ -44,11 +44,9 @@ export function Button({
   );
 
   if (asChild && isValidElement(children)) {
-    return cloneElement(children as React.ReactElement, {
-      className: clsx(
-        classes,
-        (children as React.ReactElement).props.className
-      ),
+    // Correctly type the cloneElement call
+    return cloneElement(children as React.ReactElement<ButtonProps>, {
+      className: clsx(classes, className),
       ...props,
     });
   }
@@ -67,6 +65,7 @@ interface SubmitButtonProps {
   className?: string;
   isPending: boolean;
 }
+
 export function SubmitButton({
   text,
   variant,
