@@ -1,6 +1,3 @@
-import InstaIcon from "@/public/icons/insta.svg";
-import LinkedInIcon from "@/public/icons/linkedin.svg";
-
 export function Footer() {
   return (
     <footer className="py-5 bg-background text-white/60 border-t border-white/30">
@@ -15,7 +12,7 @@ export function Footer() {
           <ul className="flex justify-center gap-2.5">
             <li>
               <a href="https://www.instagram.com/hazlo.sports/" target="_blank">
-                <InstaIcon />
+                Instagram
               </a>
             </li>
             <li>
@@ -23,7 +20,7 @@ export function Footer() {
                 href="https://www.linkedin.com/company/hazlosports"
                 target="_blank"
               >
-                <LinkedInIcon />
+                Linkedin
               </a>
             </li>
           </ul>
