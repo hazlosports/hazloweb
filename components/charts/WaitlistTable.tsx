@@ -20,7 +20,6 @@ interface WaitlistProps {
 
 export function WaitlistTable() {
   const [data, setData] = useState<WaitlistProps[] | undefined>(undefined);
-  const [error, setError] = useState<string | undefined>("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,8 +31,6 @@ export function WaitlistTable() {
           created_at: new Date(item.created_at),
         }));
         setData(parsedData);
-      } else {
-        setError(res.msg);
       }
     };
 

@@ -2,14 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  Calendar,
-  GraduationCap,
-  Heart,
-  HeartPulse,
-  User,
-  Users,
-} from "lucide-react";
+import { Calendar, HeartPulse, User, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const features = [

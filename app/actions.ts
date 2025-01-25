@@ -16,7 +16,7 @@ export async function waitlistEmail(values: z.infer<typeof waitlistSchema>) {
 
   const { email } = validatedFields.data;
 
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from("waitlist")
     .insert([{ email }])
     .select();

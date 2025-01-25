@@ -13,8 +13,7 @@ export async function getUserData(userId: string) {
 
     if (error) return { success: false, msg: "Error getting User Data" };
     return { success: true, data: data };
-  } catch (error: any) {
-    console.log("Warning Error: ", error);
-    return { success: false, msg: error.message };
+  } finally {
+    return;
   }
 }

@@ -6,17 +6,11 @@ import location from "@/public/landing/location.png";
 import atlanta from "@/public/landing/atlanta.png";
 import newyork from "@/public/landing/newyork.png";
 import miami from "@/public/landing/miami.png";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 export function Location() {
   const containierRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containierRef,
-    offset: ["start end", "end end"],
-  });
 
-  const translateY = useTransform(scrollYProgress, [0, 1], [-20, 70]);
   return (
     <div className="bg-gradient-to-b from-background to-blue py-[72px] sm:py-24">
       <h2 className="text-center font-bold text-2xl sm:text-6xl tracking-tight max-w-4xl mx-auto text-white">

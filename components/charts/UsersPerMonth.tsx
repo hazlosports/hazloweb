@@ -9,20 +9,23 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/Card";
 
+interface UserData {
+  month: string;
+  cumulativeCount: number;
+}
+
 export function UsersPerMonth() {
-  const [cumulativeData, setCumulativeData] = useState<any[]>([]);
+  const [cumulativeData, setCumulativeData] = useState<UserData[]>([]);
 
   useEffect(() => {
     const fetchUserData = async () => {

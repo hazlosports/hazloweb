@@ -21,15 +21,12 @@ interface Coaches {
 
 export function HazloCoachesList() {
   const [data, setData] = useState<Coaches[] | undefined>(undefined);
-  const [error, setError] = useState<string | undefined>("");
 
   useEffect(() => {
     const fetchData = async () => {
       const res = await getHazloCoaches();
       if (res.success) {
         setData(res.data);
-      } else {
-        setError(res.msg);
       }
     };
 
