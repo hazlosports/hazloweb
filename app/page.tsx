@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero ctaRef={ctaRef} />
+      <Hero ctaRef={ctaRef as React.RefObject<HTMLDivElement>} />
       <Features />
       <Location />
       <FAQs />
