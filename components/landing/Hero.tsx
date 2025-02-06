@@ -159,7 +159,7 @@ export function Hero({ ctaRef }: HeroProps) {
         <div className="flex justify-center mt-12 mb-12 w-full">
   <Button
     onClick={handleScrollToCTA}
-    className="text-[1.75rem] font-semibold w-[14em] h-[3em] flex items-center justify-center text-center
+    className="text-[2rem] font-semibold w-[13em] h-[3em] flex items-center justify-center text-center
               bg-blue-500 hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 
               rounded-full shadow-lg hover:shadow-xl"
   >
