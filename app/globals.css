@@ -23,4 +23,26 @@
   body {
     @apply bg-background;
   }
+
+  Simple and subtle modern scrollbar
+  ::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+    height: 8px; /* For horizontal scrollbar */
+  }
+ /* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a; /* Darker gray */
+  border-image: linear-gradient(to right, #9b59b6, #2980b9);
+  border-radius: 50px;
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover { 
+  background-color: #2c262e; 
+  border-radius: 50px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #8e44ad, #3498db); 
+  border-image-slice: 1;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
 }

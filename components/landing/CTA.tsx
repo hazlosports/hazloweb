@@ -53,7 +53,7 @@ export function CTA() {
       .finally(() => setIsPending(false));
   };
   return (
-    <div className="text-white py-[72px] sm:py-24 text-center px-8 lg:px-20">
+    <div className="text-white py-[72px] sm:py-24 text-center px-8 lg:px-20 mb-28">
       <div className="container max-w-xl mx-auto">
         <div className="flex items-center space-x-4">
           {" "}
