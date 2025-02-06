@@ -125,7 +125,7 @@ export function Hero({ ctaRef }: HeroProps) {
         </div>
         <div className="flex justify-center relative">
         <p className="text-center text-md lg:text-lg mt-8 mb-8 max-w-xl text-white">
-          Whether you're a pro or just starting out, Hazlo connects you with like-minded athletes. Create your profile, share your progress, and find others to train, play, or compete with!
+          Whether you are a pro or just starting out, Hazlo connects you with like-minded athletes. Create your profile, share your progress, and find others to train, play, or compete with!
         </p>
           <motion.div
               className="absolute left-[75%] top-[55%] hidden lg:inline"
